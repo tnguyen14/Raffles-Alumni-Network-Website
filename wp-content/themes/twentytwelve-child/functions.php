@@ -99,7 +99,7 @@ function extra_profile_fields ($user) { ?>
 						<select id="house" name="house" class="regular-text">
 							<?php 
 							$selected = get_the_author_meta('house', $user->ID); 
-							$houses = ['Buckle-Buckley', 'Bayley-Waddle', 'Hadley-Hullet','Moor-Tarbet', 'Morrison-Richardson']; 
+							$houses = array('Buckle-Buckley', 'Bayley-Waddle', 'Hadley-Hullet','Moor-Tarbet', 'Morrison-Richardson'); 
 								foreach ($houses as $house) {
 									echo '<option value="', $house, $selected == $house ? '" selected="selected"' : '" ','>',$house,'</option>';
 								}
