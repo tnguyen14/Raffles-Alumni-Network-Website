@@ -7,3 +7,6 @@ Author URI:     http://tridnguyen.com
 Template:       twentytwelve
 Version:        0.1.0
 */
+
+// import parent stylesheet 
+@import url("../twentytwelve/style.css");
