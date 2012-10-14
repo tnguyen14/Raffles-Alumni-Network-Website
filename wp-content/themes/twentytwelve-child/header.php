@@ -37,6 +37,18 @@
 			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
 		</hgroup>
 
+		<div id="login-admin">
+			<?php if (is_user_logged_in()) { 
+					global $current_user;
+					get_currentuserinfo(); 
+					echo '<div class="greeting">Welcome, <a href="'.home_url().'/wp-admin/profile.php">'.$current_user->user_firstname.'</a></div>';?>
+					<a href="<?php echo wp_logout_url( home_url() );?>" class="logout" title="Log Out" role="button">Log Out</a>
+			<?php } else { ?>
+				<div class="register">New to our network? <a href="<?php echo get_bloginfo(url);?>/wp-login.php?action=register">Register</a> </div>
+				<a class="login" href="<?php echo get_bloginfo(url);?>/wp-login.php?redirect_to=<?php echo esc_url( home_url() );?>" title="Log In" role="button">Log In</a>
+			<?php } ?>
+		</div><!--#login-admin-->
+
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 			<h3 class="menu-toggle"><?php _e( 'Menu', 'twentytwelve' ); ?></h3>
 			<div class="skip-link assistive-text"><a href="#content" title="<?php esc_attr_e( 'Skip to content', 'twentytwelve' ); ?>"><?php _e( 'Skip to content', 'twentytwelve' ); ?></a></div>
