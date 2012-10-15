@@ -45,7 +45,7 @@
 					<a href="<?php echo wp_logout_url( home_url() );?>" class="logout" title="Log Out" role="button">Log Out</a>
 			<?php } else { ?>
 				<div class="register">New to our network? <a href="<?php echo get_bloginfo(url);?>/wp-login.php?action=register">Register</a> </div>
-				<a class="login" href="<?php echo get_bloginfo(url);?>/wp-login.php?redirect_to=<?php echo esc_url( home_url() );?>" title="Log In" role="button">Log In</a>
+				<a class="login" href="<?php echo get_bloginfo(url);?>/wp-login.php?redirect_to=<?php echo esc_url( get_permalink() );?>" title="Log In" role="button">Log In</a>
 			<?php } ?>
 		</div><!--#login-admin-->
 
