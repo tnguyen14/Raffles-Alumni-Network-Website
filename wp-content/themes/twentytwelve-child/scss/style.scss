@@ -35,6 +35,8 @@ http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
 /* =Variables
 -------------------------------------------------------------- */
 $raffles-green: #0f6601;
+$anchor-blue: #21759B;
+$carbon: #777;
 
 /* =Reset
 -------------------------------------------------------------- */
@@ -86,8 +88,15 @@ html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
 }
-a:focus {
-	outline: thin dotted;
+a {
+	text-decoration: none;
+	color: $anchor-blue;
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover {
+		text-decoration: underline;
+	}
 }
 article,
 aside,
@@ -584,43 +593,50 @@ section[role="banner"] {
 }
 
 /* Sidebar */
-.widget-area .widget {
-	word-wrap: break-word;
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
-	margin-bottom: 48px;
-	margin-bottom: 3.428571429rem;
-}
-.widget-area .widget h3 {
-	margin-bottom: 24px;
-	margin-bottom: 1.714285714rem;
-}
-.widget-area .widget p,
-.widget-area .widget li,
-.widget-area .widget .textwidget {
-	font-size: 13px;
-	font-size: 0.928571429rem;
-	line-height: 1.846153846;
-}
-.widget-area .widget p {
-	margin-bottom: 24px;
-	margin-bottom: 1.714285714rem;
-}
-.widget-area .textwidget ul {
-	list-style: disc outside;
-	margin: 0 0 24px;
-	margin: 0 0 1.714285714rem;
-}
-.widget-area .textwidget li {
-	margin-left: 36px;
-	margin-left: 2.571428571rem;
-}
-.widget-area .widget a {
-	color: #777;
-}
-.widget-area .widget a:hover {
-	color: #21759b;
+.widget-area {
+	.widget {
+		word-wrap: break-word;
+		-webkit-hyphens: auto;
+		-moz-hyphens: auto;
+		hyphens: auto;
+		margin-bottom: 48px;
+		margin-bottom: 3.428571429rem;
+		h3 {
+			margin-bottom: 24px;
+			margin-bottom: 1.714285714rem;
+		}
+		p,
+		li,
+		.textwidget {
+			font-size: 13px;
+			font-size: 0.928571429rem;
+			line-height: 1.846153846;
+		}
+		p {
+			margin-bottom: 24px;
+			margin-bottom: 1.714285714rem;
+		}
+		a {
+			color: #777;
+			&:hover {
+				color: $anchor-blue;
+			}
+		}
+
+	}
+	.textwidget {
+		ul {
+			list-style: disc outside;
+			margin: 0 0 24px;
+			margin: 0 0 1.714285714rem;
+		}
+		li {
+			margin-left: 36px;
+			margin-left: 2.571428571rem;
+		}
+
+
+	}
 }
 
 /* Footer */
@@ -960,7 +976,13 @@ footer.entry-meta {
 	font-size: 13px;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
-	color: #777;
+	color: $carbon;
+	a {
+		color: $anchor-blue;
+		&:hover {
+			color: $carbon;
+		}
+	}
 }
 .single-author .entry-meta .by-author {
 	display: none;
@@ -977,7 +999,13 @@ footer.entry-meta {
 	font-size: 13px;
 	font-size: 0.928571429rem;
 	line-height: 1.846153846;
-	color: #777;
+	color: $carbon;
+	a {
+		color: $anchor-blue;
+		&:hover {
+			color: $carbon;
+		}
+	}
 }
 /* =Archives
 -------------------------------------------------------------- */
