@@ -89,6 +89,7 @@ img { border: 0; -ms-interpolation-mode: bicubic; }
 @font-face { font-family: 'LeagueGothicRegular'; src: url('../fonts/LeagueGothic/League_Gothic-webfont.eot'); src: url('../fonts/LeagueGothic/League_Gothic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/LeagueGothic/League_Gothic-webfont.woff') format('woff'), url('../fonts/LeagueGothic/League_Gothic-webfont.ttf') format('truetype'), url('../fonts/LeagueGothic/League_Gothic-webfont.svg#LeagueGothicRegular') format('svg'); font-weight: normal; font-style: normal;
 
 }
+
 @font-face { font-family: 'BebasNeueRegular'; src: url('../fonts/BebasNeue/BebasNeue-webfont.eot'); src: url('../fonts/BebasNeue/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/BebasNeue/BebasNeue-webfont.woff') format('woff'), url('../fonts/BebasNeue/BebasNeue-webfont.ttf') format('truetype'), url('../fonts/BebasNeue/BebasNeue-webfont.svg#BebasNeueRegular') format('svg'); font-weight: normal; font-style: normal;
 
 }
@@ -274,7 +275,7 @@ header #login-admin .login, header #login-admin .logout { display: block; float:
 
 .entry-header img.wp-post-image { margin-bottom: 24px; margin-bottom: 1.714285714rem; }
 
-.entry-header .entry-title { font-size: 20px; font-size: 1.428571429rem; line-height: 1.2; font-weight: normal; }
+.entry-header .entry-title { font-size: 20px; font-size: 1.428571429rem; line-height: 1.2; font-weight: bold; text-transform: uppercase; }
 
 .entry-header .entry-title a { text-decoration: none; }
 
@@ -338,17 +339,12 @@ img.aligncenter { margin-top: 12px; margin-top: 0.857142857rem; margin-bottom: 1
 
 .entry-content embed, .entry-content iframe, .entry-content object, .entry-content video { margin-bottom: 24px; margin-bottom: 1.714285714rem; }
 
-.entry-content dl, .comment-content dl { margin: 0 24px; margin: 0 1.714285714rem; }
-
-.entry-content dt, .comment-content dt { font-weight: bold; line-height: 1.714285714; }
-
-.entry-content dd, .comment-content dd { line-height: 1.714285714; margin-bottom: 24px; margin-bottom: 1.714285714rem; }
-
-.entry-content table, .comment-content table { border-bottom: 1px solid #ededed; color: #777; font-size: 12px; font-size: 0.857142857rem; line-height: 2; margin: 0 0 24px; margin: 0 0 1.714285714rem; width: 100%; }
-
-.entry-content table caption, .comment-content table caption { font-size: 16px; font-size: 1.142857143rem; margin: 24px 0; margin: 1.714285714rem 0; }
-
-.entry-content td, .comment-content td { border-top: 1px solid #ededed; padding: 6px 10px 6px 0; }
+.entry-content .comment-content dl { margin: 0 24px; margin: 0 1.714285714rem; }
+.entry-content .comment-content dt { font-weight: bold; line-height: 1.714285714; }
+.entry-content .comment-content dd { line-height: 1.714285714; margin-bottom: 24px; margin-bottom: 1.714285714rem; }
+.entry-content .comment-content table { border-bottom: 1px solid #ededed; color: #777; font-size: 12px; font-size: 0.857142857rem; line-height: 2; margin: 0 0 24px; margin: 0 0 1.714285714rem; width: 100%; }
+.entry-content .comment-content table caption { font-size: 16px; font-size: 1.142857143rem; margin: 24px 0; margin: 1.714285714rem 0; }
+.entry-content .comment-content td { border-top: 1px solid #ededed; padding: 6px 10px 6px 0; }
 
 .site-content article { padding-bottom: 24px; padding-bottom: 1.714285714rem; margin-bottom: 72px; margin-bottom: 5.142857143rem; border-bottom: 4px double #ededed; }
 
@@ -361,6 +357,8 @@ footer.entry-meta { margin-top: 24px; margin-top: 1.714285714rem; font-size: 13p
 /* =More Customization
 -------------------------------------------------------------- */
 .entry-content h2 { margin-top: 0; }
+
+.entry-header .entry-meta { margin-top: 14px; margin-top: 1rem; font-size: 13px; font-size: 0.928571429rem; line-height: 1.846153846; color: #777; }
 
 /* =Archives
 -------------------------------------------------------------- */

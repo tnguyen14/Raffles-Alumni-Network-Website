@@ -15,6 +15,17 @@ function child_scripts_styles() {
 
 }
 
+// return an anchored text with link to the post's author's posts page url
+function get_post_author() {
+	$author = sprintf( '<a class="url fn n" href="%1$s" title="%2$s" rel="author">%3$s</a>',
+		esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ),
+		esc_attr( sprintf( __( 'View all posts by %s', 'twentytwelve' ), get_the_author() ) ),
+		get_the_author()
+	);
+	
+	return $author;
+}
+
 add_action( 'wp_enqueue_scripts', 'child_scripts_styles');
 // Add user meta data fields for Rafflesians
 

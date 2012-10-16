@@ -177,6 +177,7 @@ img {
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'BebasNeueRegular';
     src: url('../fonts/BebasNeue/BebasNeue-webfont.eot');
@@ -699,7 +700,8 @@ header {
 	font-size: 20px;
 	font-size: 1.428571429rem;
 	line-height: 1.2;
-	font-weight: normal;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 .entry-header .entry-title a {
 	text-decoration: none;
@@ -904,44 +906,42 @@ img.aligncenter {
 	margin-bottom: 24px;
 	margin-bottom: 1.714285714rem;
 }
-.entry-content dl,
-.comment-content dl {
-	margin: 0 24px;
-	margin: 0 1.714285714rem;
-}
-.entry-content dt,
-.comment-content dt {
-	font-weight: bold;
-	line-height: 1.714285714;
-}
-.entry-content dd,
-.comment-content dd {
-	line-height: 1.714285714;
-	margin-bottom: 24px;
-	margin-bottom: 1.714285714rem;
-}
-.entry-content table,
-.comment-content table {
-	border-bottom: 1px solid #ededed;
-	color: #777;
-	font-size: 12px;
-	font-size: 0.857142857rem;
-	line-height: 2;
-	margin: 0 0 24px;
-	margin: 0 0 1.714285714rem;
-	width: 100%;
-}
-.entry-content table caption,
-.comment-content table caption {
-	font-size: 16px;
-	font-size: 1.142857143rem;
-	margin: 24px 0;
-	margin: 1.714285714rem 0;
-}
-.entry-content td,
-.comment-content td {
-	border-top: 1px solid #ededed;
-	padding: 6px 10px 6px 0;
+.entry-content 
+.comment-content {
+	dl {
+		margin: 0 24px;
+		margin: 0 1.714285714rem;
+	}
+	dt {
+		font-weight: bold;
+		line-height: 1.714285714;
+	}
+	dd {
+		line-height: 1.714285714;
+		margin-bottom: 24px;
+		margin-bottom: 1.714285714rem;
+	}
+	table {
+		border-bottom: 1px solid #ededed;
+		color: #777;
+		font-size: 12px;
+		font-size: 0.857142857rem;
+		line-height: 2;
+		margin: 0 0 24px;
+		margin: 0 0 1.714285714rem;
+		width: 100%;
+	}
+	table caption {
+		font-size: 16px;
+		font-size: 1.142857143rem;
+		margin: 24px 0;
+		margin: 1.714285714rem 0;
+	}
+	td {
+		border-top: 1px solid #ededed;
+		padding: 6px 10px 6px 0;
+	}
+
 }
 .site-content article {
 	padding-bottom: 24px;
@@ -971,7 +971,14 @@ footer.entry-meta {
 .entry-content h2 {
 	margin-top: 0;
 }
-
+.entry-header .entry-meta {
+	margin-top: 14px;
+	margin-top: 1rem;
+	font-size: 13px;
+	font-size: 0.928571429rem;
+	line-height: 1.846153846;
+	color: #777;
+}
 /* =Archives
 -------------------------------------------------------------- */
 
